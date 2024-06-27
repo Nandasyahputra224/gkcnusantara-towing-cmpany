@@ -2,10 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mont: ["Montserrat", "sans-serif"],
+      },
+      fontWeight: {
+        mont: 480,
+      },
+    },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["nord", "light"],
-  },
+  plugins: [],
 };

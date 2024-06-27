@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import { Link, useLocation } from "react-router-dom";
 
-const SideBarLink = ({ link, setMenu }) => {
+const DrawerLink = ({ link, setMenu }) => {
   const { pathname } = useLocation();
   return (
     <Link
@@ -15,4 +15,4 @@ const SideBarLink = ({ link, setMenu }) => {
   );
 };
 
-export default SideBarLink;
+export default DrawerLink;
