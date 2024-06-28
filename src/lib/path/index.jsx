@@ -17,7 +17,7 @@ const NavLinks = [
   {
     key: "contact",
     label: "Hubungi Kami",
-    path: "/contact-us",
+    path: "/contact",
   },
 ];
 
