@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import clsx from "clsx";
 import { FiMenu } from "react-icons/fi";
 import logo from "../../assets/gkc.png";
 import elementComponent from "../elements/template";
