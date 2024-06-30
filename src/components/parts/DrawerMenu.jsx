@@ -1,6 +1,6 @@
 import React from "react";
 import { CgCloseR } from "react-icons/cg";
-import { NavLinks } from "../../lib/path";
+import NavLinks from "../../lib/path/index";
 import DrawerLink from "./DrawerLink";
 import { clsx } from "clsx";
 
@@ -12,7 +12,6 @@ const DrawerMenu = ({ drawMenuOpen, setMenu }) => {
           "fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-500",
           drawMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
-        // onClick={() => setMenu(false)}
       ></div>
       <div
         className={clsx(
@@ -22,9 +21,9 @@ const DrawerMenu = ({ drawMenuOpen, setMenu }) => {
       >
         <div className="flex justify-end p-4">
           <CgCloseR
-            // onClick={() => setMenu(false)}
             size={30}
             className="cursor-pointer"
+            onClick={() => setMenu(false)}
           />
         </div>
         <div className="flex font-mont flex-col p-8 gap-4">

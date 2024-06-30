@@ -3,7 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import logo from "../../assets/gkc.png";
 import elementComponent from "../elements/template";
 import DrawerMenu from "./DrawerMenu";
-import { NavLinks } from "../../lib/path";
+import NavLinks from "../../lib/path/index";
 import DrawerLink from "./DrawerLink";
 const { Nav } = elementComponent;
 
@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex gap-10">
             {NavLinks.map((link) => (
-              <DrawerLink key={link.key} link={link} />
+              <DrawerLink key={link.key} link={link} setMenu={setMenu} />
             ))}
           </div>
           <div className="sm:block md:hidden cursor-pointer  lg:hidden ">
